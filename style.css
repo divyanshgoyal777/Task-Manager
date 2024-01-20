@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ed254e;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ed254e;
+    position: absolute;
+}
+
+.heading {
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.task-list {
+    padding: 30px;
+    min-height: 50vh;
+    height: auto;
+    width: 25vw;
+    background-color: #f9dc5c;
+    margin: 50px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.task-container {
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+
+.all-task {
+    display: flex;
+    align-items: center;
+    margin-bottom: -3px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 20vw;
+    height: 5vh;
+    font-family: 'Calibri';
+    border-radius: 10px;
+}
+
+ul input:focus {
+    outline: 1px solid black;
+    background-color: rgb(217, 234, 248);
+}
+
+ul input:hover{
+    outline: 1px solid black;
+}
+
+ul button {
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 10px auto;
+    background-color: #465362;
+    color: white;
+    border-radius: 5px;
+    width: 20vw;
+}
+
+ul button:hover {
+    background-color: #2b323d;
+    color: white;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 15px;
+    outline: none;
+    border: none;
+    margin-right: 8px;
+}
+
+.checkbox:hover {
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    outline: none;
+    border: none;
+}
+
+li i {
+    margin-left: auto;
+    opacity: 0%;
+    color: red;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+li:hover i {
+    opacity: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .task-list {
+        width: 90%;
+        margin: 20px auto;
+        padding: 3vw; /* Adjust padding for smaller screens */
+        box-sizing: border-box;
+    }
+
+    ul input {
+        width: 100%;
+        padding: 10px; /* Adjust padding for input on smaller screens */
+        box-sizing: border-box;
+    }
+
+    ul button {
+        padding: 10px;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    li i {
+        font-size: 1.2rem; /* Adjust icon size for smaller screens */
+    }
+}
