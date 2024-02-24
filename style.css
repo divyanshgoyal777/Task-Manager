@@ -92,6 +92,8 @@ ul button:hover {
 
 .checkbox:hover {
     cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 .checkbox:checked {
@@ -115,13 +117,13 @@ li:hover i {
     .task-list {
         width: 90%;
         margin: 20px auto;
-        padding: 3vw; /* Adjust padding for smaller screens */
+        padding: 3vw;
         box-sizing: border-box;
     }
 
     ul input {
         width: 100%;
-        padding: 10px; /* Adjust padding for input on smaller screens */
+        padding: 10px;
         box-sizing: border-box;
     }
 
@@ -132,6 +134,6 @@ li:hover i {
     }
 
     li i {
-        font-size: 1.2rem; /* Adjust icon size for smaller screens */
+        font-size: 1.2rem;
     }
 }
